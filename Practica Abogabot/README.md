@@ -46,5 +46,4 @@ Usuario administrador: <ul>
 
 <h3>Buyer</h3>
 
-<embed src="https://drive.google.com/file/d/1WBdkSAH8LoOCihfsADmw76ZoXRhL1sr-/view?usp=sharing" type="application/pdf" />
-![Image text](https://drive.google.com/file/d/1WBdkSAH8LoOCihfsADmw76ZoXRhL1sr-/view?usp=sharing)
+![Buyer-Abogabot-P-gina-1.png](https://i.postimg.cc/cHSsB19G/Buyer-Abogabot-P-gina-1.png)
