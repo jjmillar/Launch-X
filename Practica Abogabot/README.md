@@ -40,4 +40,4 @@ Usuario administrador: <ul>
 
 <h3>Modelacion del negocio</h3>
 
-<img src="https://lucid.app/publicSegments/view/f0892df4-18fb-4c83-bd31-8d9b306b5a7a/image.png/image.png" alt="Modelacion negocio abogabot">
+![Image text](https://lucid.app/publicSegments/view/f0892df4-18fb-4c83-bd31-8d9b306b5a7a/image.png/image.png)
