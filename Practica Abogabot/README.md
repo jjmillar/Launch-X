@@ -46,4 +46,4 @@ Usuario administrador: <ul>
 
 <h3>Buyer</h3>
 
-<embed src="https://www.hubspot.es/make-my-persona?persona=-NEaDDXmzp8OOVDaq5XQ" type="application/pdf" />
+<embed src="https://drive.google.com/file/d/1WBdkSAH8LoOCihfsADmw76ZoXRhL1sr-/view?usp=sharing" type="application/pdf" />
