@@ -52,7 +52,7 @@ Usuario administrador: <ul>
 
 <h3>Publico Objetivo</h3>
 
-![Publico-objetivo.jpg](https://i.postimg.cc/nLBshqhy/Publico-objetivo.jpg)]
+![Publico-objetivo.jpg](https://i.postimg.cc/nLBshqhy/Publico-objetivo.jpg)
 
 <hr>
 
