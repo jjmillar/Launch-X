@@ -45,3 +45,5 @@ Usuario administrador: <ul>
 <hr>
 
 <h3>Buyer</h3>
+
+<embed src="https://www.hubspot.es/make-my-persona?persona=-NEaDDXmzp8OOVDaq5XQ" type="application/pdf" />
