@@ -52,4 +52,8 @@ Usuario administrador: <ul>
 
 <h3>Publico Objetivo</h3>
 
-<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVPMq4joY=/?pres=1&frameId=3458764536141102481&embedId=153805751964" frameborder="0" scrolling="no" allowfullscreen></iframe>
+![Publico-objetivo.jpg](https://i.postimg.cc/nLBshqhy/Publico-objetivo.jpg)]
+
+<hr>
+
+<h3>UI / UX</h3>
