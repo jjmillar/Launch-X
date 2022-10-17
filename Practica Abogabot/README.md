@@ -12,7 +12,7 @@
 
 <h3>Requerimientos</h3>
 
-La pagina web consistirá en 3 tipos de usuario. Un usuario invitado, que navegará por la pagina sin necesitad de autenticarse. Un usuario administrador, el cual tendrá todas las caracteristicas administrativas para manejar y controlar los casos y finalmente el usuario cliente, que será capas de ver el seguimiento de su caso.</
+La pagina web consistirá en 3 tipos de usuario. Un usuario invitado, que navegará por la pagina sin necesitad de autenticarse. Un usuario administrador, el cual tendrá todas las caracteristicas administrativas para manejar y controlar los casos y finalmente el usuario cliente, que será capas de ver el seguimiento de su caso.
 
 Usuario invitado: <ul>
                         <li>No tendrá opciones de usuario</li>
@@ -36,3 +36,8 @@ Usuario administrador: <ul>
                         <li>Actualiza los estados del caso y mantiene al cliente informado</li>
                       </ul>
 
+<hr>
+
+<h3>Modelacion del negocio</h3>
+
+<img src="https://lucid.app/publicSegments/view/f0892df4-18fb-4c83-bd31-8d9b306b5a7a/image.png/image.png" alt="Modelacion negocio abogabot">
