@@ -47,3 +47,9 @@ Usuario administrador: <ul>
 <h3>Buyer</h3>
 
 ![Buyer-Abogabot-P-gina-1.png](https://i.postimg.cc/cHSsB19G/Buyer-Abogabot-P-gina-1.png)
+
+<hr>
+
+<h3>Publico Objetivo</h3>
+
+<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVPMq4joY=/?pres=1&frameId=3458764536141102481&embedId=153805751964" frameborder="0" scrolling="no" allowfullscreen></iframe>
