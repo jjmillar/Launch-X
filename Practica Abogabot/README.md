@@ -40,4 +40,5 @@ Usuario administrador: <ul>
 
 <h3>Modelacion del negocio</h3>
 
-![Image text](https://lucid.app/publicSegments/view/f0892df4-18fb-4c83-bd31-8d9b306b5a7a/image.png/image.png)
+![Image text](https://lucid.app/publicSegments/view/f0892df4-18fb-4c83-bd31-8d9b306b5a7a/image.png)
+<img src="your_relative_path_here" width="350" title="hover text">
