@@ -58,5 +58,5 @@ Usuario administrador: <ul>
 
 <h3>UI / UX</h3>
 
-![Inicio](https://postimg.cc/5H6tBm2n][img]https://i.postimg.cc/5H6tBm2n/Inicio.png) ![Formulario](https://postimg.cc/56Vjhvs2][img]https://i.postimg.cc/56Vjhvs2/Formulario.png)
-![Pago](https://postimg.cc/xkh1tbkY][img]https://i.postimg.cc/xkh1tbkY/Pago.png) ![PAgo Exitoso](https://postimg.cc/2bW8J8vW][img]https://i.postimg.cc/2bW8J8vW/Pago-Exitoso.png)
+![Inicio](https://i.postimg.cc/5H6tBm2n/Inicio.png) ![Formulario](https://i.postimg.cc/56Vjhvs2/Formulario.png)
+![Pago](https://i.postimg.cc/xkh1tbkY/Pago.png) ![PAgo Exitoso](https://i.postimg.cc/2bW8J8vW/Pago-Exitoso.png)
