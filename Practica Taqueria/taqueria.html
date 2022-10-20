@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos El Jefe</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tacos El Jefe, desde 1992 entregando significado a sus vidas</h1>
+    </header>
+
+    <img src="https://i.postimg.cc/kXY8kN1G/Tacos-EL-JEFE.png" alt="Tacos el jefe">
+
+    <h2>Menu</h2>
+
+    <h3>Tacos grandes</h3>
+    <p>Todos incluyen nopales y cebollas</p>
+    <ul>
+        <li>Bisteck.........................$1.500</li>
+        <li>Mechado.........................$1.700</li>
+        <li>A lo pobre......................$1.900</li>
+        <li>Italiano........................$1.500</li>
+        <li>Pastor..........................$1.500</li>
+        <li>Lomo............................$1.500</li>
+    </ul>
+
+    <h3>Tacos pequeños</h3>
+    <p>Con cilantro y cebolla</p>
+    <ul>
+        <li>Bisteck.........................$500</li>
+        <li>Mechado.........................$700</li>
+        <li>A lo pobre......................$900</li>
+        <li>Italiano........................$500</li>
+        <li>Pastor..........................$500</li>
+        <li>Lomo............................$500</li>
+    </ul>
+
+    <h3>Especiales</h3>
+    <p>Haz tu combo con bebida por $1.000</p>
+    <dl>
+        <dt><b>Labrador</b>............................$2.500</dt>
+        <dd>- Tortilla de maiz con carne asada</dd>
+        <dt><b>Pastor Aleman</b>.......................$2.500</dt>
+        <dd>- Tortilla de maiz con carne asada y porotos negros</dd>
+        <dt><b>Fox terrier</b>.........................$2.500</dt>
+        <dd>- Tortilla de maiz con lomo y salsa blanca</dd>
+        <dt><b>Perron</b>..............................$2.500</dt>
+        <dd>- Tortilla de maiz con carne ahumada, lomo y tocino</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Ubicacion</h2>
+    <h3>Sucursales</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Ubicacion</th>
+            <th>Horarios</th>
+        </tr>
+        <tr>
+            <td>Centro</td>
+            <td><a href="https://goo.gl/maps/474FdmXGbDux8KuR7" target="_blank">Colo Colo 555</a></td>
+            <td>L - D 5pm - 3am</td>
+        </tr>
+        <tr>
+            <td>Sur</td>
+            <td><a href="https://g.page/Ferresurla?share" target="_blank">Av. Los Carrera 686</a></td>
+            <td>L - D 5pm - 3am</td>
+        </tr> <tr>
+            <td>Norte</td>
+            <td><a href="https://g.page/hotel-avellano?share" target="_blank">Av. Sor Vicenta 2530</a></td>
+            <td>L - D 24H</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido aqui</h3>
+
+    <form action="">
+        <p>De que taqueria quieres?</p>
+        <select name="" id="">
+            <option value="Norte">Norte</option>
+            <option value="Centro">Centro</option>
+            <option value="Sur">Sur</option>
+        </select>
+
+        <p>De que tacos quieres?</p>
+        <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck">
+        <label for="Bisteck">Bisteck</label>
+        <input type="number" id="BisteckNumber" name="BisteckNumber"
+        placeholder="Cuantos?">
+        <br>
+        <input type="checkbox" id="Mechado" name="Mechado" value="Mechado">
+        <label for="Mechado">Mechado</label>
+        <input type="number" id="MechadoNumber" name="MechadoNumber"
+        placeholder="Cuantos?">
+        <br>
+        <input type="checkbox" id="A lo pobre" name="A lo pobre" value="A lo pobre">
+        <label for="A lo pobre">A lo pobre</label>
+        <input type="number" id="A lo pobreNumber" name="A lo pobreNumber"
+        placeholder="Cuantos?">
+        <br>
+        <input type="checkbox" id="Italiano" name="Italiano" value="Italiano">
+        <label for="Italiano">Italiano</label>
+        <input type="number" id="ItalianoNumber" name="ItalianoNumber"
+        placeholder="Cuantos?">
+        <br>
+        <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+        <label for="Pastor">Pastor</label>
+        <input type="number" id="PastorNumber" name="PastorNumber"
+        placeholder="Cuantos?">
+        <br>
+        <input type="checkbox" id="Lomo" name="Lomo" value="Lomo">
+        <label for="Lomo">Lomo</label>
+        <input type="number" id="LomoNumber" name="LomoNumber"
+        placeholder="Cuantos?">
+        
+        <br><br>
+        
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Como te llamas?">
+
+        <br><br>
+        
+        <label for="Telefono">Telefono:</label><br>
+        <input type="text" id="Telefono" name="Telefono" placeholder="Tu telefono?">
+
+        <br><br>
+        
+        <label for="Direccion">Direccion:</label><br>
+        <input type="text" id="Direccion" name="Direccion" placeholder="A donde quieres que te los llevemos?">
+
+        <br><br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+
+</body>
+</html>
