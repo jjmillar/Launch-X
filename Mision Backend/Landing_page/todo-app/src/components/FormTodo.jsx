@@ -21,7 +21,7 @@ const FormTodo = props => {
     return (
         <form on onSubmit={handleSubmit}>
             <div className="todo-list">
-                <div className="imput">
+                <div className="file-input">
                     <input
                         type="text"
                         className="text"

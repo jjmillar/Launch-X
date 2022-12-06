@@ -1,6 +1,11 @@
+// Herencia
+
 class Animales {
 
-    #especie = "Felis Catus";
+    #especie = "";
+    #nombre = "";
+    #edad = 0;
+    #terrenoAbuela = "Terreno";
 
     constructor(nombre, edad) {
         this.nombre = nombre;
@@ -17,7 +22,11 @@ class Animales {
 
     getEspecie() {
         return this.#especie;
-    }
+    };
+
+    setEspecie(especie) {
+        this.#especie = especie;
+    };
 
 };
 
@@ -37,13 +46,18 @@ class Gatos extends Animales {
     };
 
     especiegato() {
-        return `Soy un ${this.getEspecie}`;
+        return `Soy un ${this.getEspecie()}`;
     }
 
 };
 
 let animal = new Animales('gato', 5);
+animal.setEspecie("Felis Catus");
+
+
 let gato = new Gatos("gato", 5, "blanco");
+gato.setEspecie("Felis Catus");
+
 console.log(gato.anios());
-console.log(gato.especie);
-console.log(animal.especiegato);
+//console.log(animal.especie);
+console.log(gato.especiegato());

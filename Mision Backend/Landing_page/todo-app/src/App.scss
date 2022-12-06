@@ -24,10 +24,13 @@ body {
   box-shadow: 0 5px 30px rgba(0,0,0,0.2);
 }
 
-$colorRosa: white;
-$colorRosaHover: #ef4bf2;
+$colorRosa: #C2185B;
+$colorRosaHover: #E91E63;
 
-@mixin button($class, $color, $colorHover) {
+$colorAzul: #1976D2;
+$colorAzulHover: #03A9F4;
+
+@mixin button ($class, $color, $colorHover) {
   .button.#{class}{background: $color;};
   .button.#{class}:hover{background: $colorHover;};
   .button.#{class}:active{background: $color;};
@@ -40,4 +43,82 @@ $colorRosaHover: #ef4bf2;
   border-radius: 15px;
 }
 
-@include button ('pink', $colorRosa, $colorRosaHover)
+@include button ('pink', $colorRosa, $colorRosaHover);
+@include button ('blue', $colorAzul, $colorAzulHover);
+
+.file-input {
+  padding: 2px;
+  background: #f8f8f8;
+}
+
+.file-input > .text {
+  outline: none;
+  padding: 0px 10px;
+  font-size: 18px;
+  width: 230px;
+  height: 43px;
+  background: transparent;
+  border: 0px solid;
+}
+
+$duracion: 0.4s;
+$stroke: #34EB9F;
+$colorText: #222222;
+$colorTextChecked: #85E6E4;
+
+.todo {
+  display: block;
+  position: relative;
+  padding: 1em 1em 1em 16%;
+  cursor: pointer;
+  border-bottom: solid 1px #ddd;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.todo.new-item {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn .3s linear forwards;
+}
+
+@keyframes fadeIn {
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.todo_state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.todo_text {
+  color: $colorText;
+  text-align: right;
+  transition: all $duracion/2 linear $duracion/2;
+}
+
+.todo_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+
+  fill: none;
+  stroke: $stroke;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.todo_line, .todo_box, .todo_check {
+  transition: stroke-dashoffset $duracion cubic-bezier(0.075, 0.82, 0.165, 1);
+}
