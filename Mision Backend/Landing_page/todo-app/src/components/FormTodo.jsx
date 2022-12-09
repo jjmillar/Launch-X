@@ -7,7 +7,6 @@ const FormTodo = props => {
     const handleSubmit = e => {
         e.preventDefault();
         console.log(description);
-        setDescription("");
 
         addItem({
             done: false,
@@ -19,7 +18,7 @@ const FormTodo = props => {
     };
 
     return (
-        <form on onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <div className="todo-list">
                 <div className="file-input">
                     <input
