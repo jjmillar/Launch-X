@@ -1,0 +1,23 @@
+{
+  "name": "holamundo",
+  "version": "1.0.0",
+  "description": "Es mi primer hola mundo",
+  "main": "holamundo.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjmillar/Launch-X/tree/main/Mision%20Backend"
+  },
+  "author": "julianmillarvollaire",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "homepage": "https://github.com/jjmillar/Launch-X/tree/main/Mision%20Backend"
+}
