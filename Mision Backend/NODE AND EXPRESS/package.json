@@ -1,0 +1,12 @@
+{
+  "name": "node-and-express",
+  "version": "1.0.0",
+  "description": "node and express",
+  "main": "index.js",
+  "scripts": {
+    "santa": "node santa.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JJ Millar",
+  "license": "ISC"
+}
