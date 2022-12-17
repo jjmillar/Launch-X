@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Practica de Node y HTML</title>
+</head>
+<body>
+    <div style="margin: 24px">    
+        <nav class="navbar-inverse navbar-static-top">
+            <div class="container">
+                <a href="/" class="navbar-brand"> Launch X</a>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="/">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron" style="padding: 40px;">
+            <h1>Launch X</h1>
+            <p>Registrate a Launch X</p>
+            <div class="container">
+                <form method="POST" action="/">
+                    <div class="row">
+                        <div class="col-sm" style="background-color: black;">
+                            <label>Nombre</label>
+                            <input type="text" name="first_name" id="nombre" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="col-3" style="background-color: blue;">
+                        <label>Correo</label>
+                        <input type="email" name="email_address" id="correo" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
