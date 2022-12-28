@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socket chat</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <ul id="mensajes"></ul>
@@ -17,8 +18,30 @@
         var socket = io();
 
         let form = document.getElementById('form');
-        let input = docment.getElementById('input');
+        let input = document.getElementById('input');
         let mensajes = document.getElementById('mensajes');
+        let body = document.getElementById('body');
+
+       /* body.addEventListener('onload', function() {
+            if (Notification.permission !== 'granted') {
+                Notification.requestPermission()
+            } 
+        });*/
+
+        function mandarNotificacion(msg) {
+            if (Notification.permission !== 'granted') {
+                Notification.requestPermission()
+            } else {
+                const options = {
+                    body: msg,
+                    dir: 'ltr'
+                };
+                const notificacion = new Notification('Notification', options)
+                notificacion.onclick = function() {
+                    window.open("https://www.google.com.mx/?hl=es-419")
+                }
+            }
+        };
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -31,6 +54,7 @@
             item.textContent = msg;
             mensajes.appendChild(item);
             window.scrollTo(0, document.body.scrollHeight);
+            mandarNotificacion(msg);
         });
 
     </script>
