@@ -52,7 +52,21 @@ io.on('connection', socket => {
         socket.emit('check-players', players)
     });
 
-    socket.on('fire', id =>)
+    socket.on('fire', id => {
+        console.log(`Disparo de ${playerIndex}`, id);
+        socket.broadcast.emit('fire', id);
+    });
+
+    socket.on('fire-reply', square => {
+        console.log(square);
+        socket.broadcast.emit('fire-reply'. square);
+    });
+
+    setTimeout( () => {
+        connections[playerIndex] = null;
+        socket.emit('timeout');
+        socket.disconnect();
+    }, 600000);
 
 });
 
