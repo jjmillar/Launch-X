@@ -167,7 +167,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        socket.on
+        socket.on('fire', id => {
+            enemyGo(id);
+            const square = userSquares[id]
+            socket.emit('fire-reply', square.classList);
+            // playGameMulti(socket);
+        });
+
+        socket.on('fire-reply', classList => {
+            // Funcion para evelar el cuadro
+            // playGameMulti(socket);
+        });
 
     };
 
