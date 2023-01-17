@@ -1,10 +1,13 @@
 // Mi promesa
+/**
+ * Simplemente devuelve la cadena "Algo"
+ * @returns {String} Algo
+ */
+function miFunction() {
+    return "Algo";
+}
 
-function miFuncion() {
-    console.log("Algo");
-};
-
-miFuncion()
+miFunction()
     .then(data => {
         console.log(data);
     })

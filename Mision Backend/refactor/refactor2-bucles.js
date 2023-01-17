@@ -24,6 +24,11 @@ await productModel.update({outdated: true}, {
 });
 
 // Otra forma Promise.all
+/**
+ * Devuelve ese mismo valor concatenado
+ * @param {int} data 
+ * @returns {int} suma
+ */
 function funcionAsync(data) {
     return data + data;
 }
