@@ -49,7 +49,19 @@ async function update(id, programmingLanguajes) {
 
     let message = "Error al actualizar el lenguaje de programacion";
     if (resultado.affectedRows) {
-        message = "El ha sido lenguaje actualizado con exito";
+        message = "El lenguaje ha sido actualizado con exito";
+    }
+    return {message};
+}
+
+async function delete1(id) {
+    const resultado = db.query(
+        `DELETE FROM lenguajes_programacion WHERE id=${id}`
+    );
+
+    let message = "Error al eliminar el lenguaje de programacion";
+    if (resultado.affectedRows) {
+        message = "El lenguajes ha sido eliminado con exito";
     }
     return {message};
 }
@@ -57,5 +69,6 @@ async function update(id, programmingLanguajes) {
 module.exports = {
     create,
     read,
-    update
+    update,
+    delete1
 }

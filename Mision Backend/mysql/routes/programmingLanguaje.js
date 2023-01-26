@@ -29,4 +29,13 @@ router.put('/', async function(req, res, next) {
     }
 });
 
+router.delete('/', async function(req, res, next) {
+    try {
+        res.json(await programmingLanguajes.delete1(req.query.id))
+    } catch (err) {
+        console.error("Este es el error: " + err.message);
+        next(err);
+    }
+});
+
 module.exports = router;
