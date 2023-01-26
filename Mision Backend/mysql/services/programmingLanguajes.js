@@ -4,7 +4,26 @@ const db = require('./db');
 const helper = require('../helper');
 const config = require('../config');
 
-async function getMultiple(page=1) {
+async function create(programmingLanguajes) {
+    const resultado = await db.query(`
+        INSERT INTO lenguajes_programacion
+        (nombre, anio_salida, github_rank)
+        VALUES
+        (
+            ${programmingLanguajes.nombre},
+            ${programmingLanguajes.anio_salida},
+            ${programmingLanguajes.github_rank}
+        )
+    `);
+
+    let message = "Error al crear el lenguaje de programacion";
+    if (resultado.affectedRows) {
+        message = "El lenguaje se a creado con exito";
+    }
+    return {message};
+}
+
+async function read(page=1) {
     const offset = helper.getOffSet(page, config.listPerPage);
     const rows = await db.query(`
         SELECT * FROM lenguajes_programacion LIMIT ${offSet}, ${config.listPerPage},
@@ -19,6 +38,24 @@ async function getMultiple(page=1) {
     };
 };
 
+async function update(id, programmingLanguajes) {
+    const resultado = await db.query(`
+        UPDATE lenguajes_programacion
+            SET nombre="${programmingLanguajes.nombre}",
+                anio_salida="${programmingLanguajes.anio_salida}",
+                github_rank="${programmingLanguajes.github_rank}",
+        WHERE id=${id}
+    `);
+
+    let message = "Error al actualizar el lenguaje de programacion";
+    if (resultado.affectedRows) {
+        message = "El ha sido lenguaje actualizado con exito";
+    }
+    return {message};
+}
+
 module.exports = {
-    getMultiple
+    create,
+    read,
+    update
 }

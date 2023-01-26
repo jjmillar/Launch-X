@@ -1,3 +1,5 @@
+const dotenv = require('dotenv').config();
+
 const config = {
     db: {
         host: process.env.HOSTNAME,

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const programmingLanguajesRouter = require('./routes/programmingLanguaje');
 
 app.use(express.json());
 app.use(
@@ -11,6 +12,12 @@ app.use(
 
 app.get("/", (req, res) => {
     res.json({message: "OK"});
+});
+
+app.use("/lenguajes", programmingLanguajesRouter);
+
+app.use((err, req, res, next) => {
+    const statuscode = err.statusCode || 500;
 });
 
 app.listen(port, () => {
