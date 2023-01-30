@@ -26,6 +26,28 @@ class TaskList {
             tasks: items
         });
 
+        async addTask(req, res) {
+            const item = req.body;
+
+            await this.taskObjeto.addItem(item);
+            res.redirect('/')
+        };
+
+        async completeTask(req, res) {
+            const completeTasks = Object.keys(req.body);
+            const tasks = [];
+
+            completeTasks.forEach(task => {
+                tasks.push(this.taskObjeto.updateItem(task));
+            });
+
+            await Promise.all(tasks);
+
+            res.redirect("/")
+        }
+
     }
 
 }
+
+module.exports = TaskList;
