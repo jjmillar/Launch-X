@@ -20,3 +20,38 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); 
+
+const cosmosClient = new CosmosClient({
+    endpoint: config.host,
+    key: config.authKey
+});
+
+const taskObjeto = new Task(cosmosClient, config.databaseID, config.containerID);
+
+const taskList = new TaskList(taskObjeto);
+
+taskObjeto
+    .init(err => {
+        console.log(err);
+    })
+    .catch(err => {
+        console.log(err);
+        process.exit(1);
+    });
+
+    app.get("/", (req, res, next) => taskList.showTasks(req, res).catch(next));
+
+    app.post("/agregar". (req, res, next) => taskList.addTask(req, res).catch(next));
+
+    app.post("/completar", (req, res, next) => taskList.completeTask(req, res).catch(next));
+
+    app.set('view engine', 'jade');
+
+    // Manejar un 404
+    app.use(function(req, res, next) {
+        const error = new Error("Not found");
+        err.status = 404;
+        next(err);
+    });
+
+    module.exports = app;
